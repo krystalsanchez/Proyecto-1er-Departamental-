@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <!-- Formulario para agregar nuevas tareas -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Agregar nueva tarea" required> <!-- Campo de texto para ingresar la tarea -->
+            <input type="time" id="start-time" placeholder="Hora de inicio" required> <!-- Campo de hora de inicio -->
+            <input type="date" id="start-date" placeholder="Fecha de inicio" required> <!-- Campo de fecha de inicio -->
+            <input type="time" id="end-time" placeholder="Hora final" required> <!-- Campo de hora final -->
+            <input type="date" id="end-date" placeholder="Fecha final" required> <!-- Campo de fecha final -->
+            <button type="submit">Agregar</button> <!-- Botón para agregar la tarea -->
+        </form>
+        
+        <!-- Sección para mostrar las tareas pendientes, completadas y todas las tareas -->
+        <div class="task-sections">
+            <section>
+                <h2>Tareas Pendientes</h2>
+                <ul id="pending-tasks"></ul> <!-- Lista de tareas pendientes -->
+            </section>
+            <section>
+                <h2>Tareas Completadas</h2>
+                <ul id="completed-tasks"></ul> <!-- Lista de tareas completadas -->
+            </section>
+            <section>
+                <h2>Todas las Tareas</h2>
+                <ul id="all-tasks"></ul> <!-- Lista de todas las tareas -->
+            </section>
+        </div>
+        <!-- Botones de filtro para mostrar todas las tareas, tareas activas y tareas completadas -->
+        <div class="filter-buttons">
+            <button id="all-tasks-btn">Todas</button> <!-- Botón para mostrar todas las tareas -->
+            <button id="active-tasks-btn">Activas</button> <!-- Botón para mostrar tareas activas -->
+            <button id="completed-tasks-btn">Completadas</button> <!-- Botón para mostrar tareas completadas -->
+        </div>
+    </div>
+    <script src="app.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+</html>

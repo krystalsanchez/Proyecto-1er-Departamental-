@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('fondo.jpg') no-repeat center top fixed;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 770px;
+    margin: 20px auto;
+    background-color: rgba(239, 196, 245, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Estilos para campos de texto, fecha y hora */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos de fecha y hora después del input */
+form input[type="date"]::after,
+form input[type="time"]::after {
+    content: " De inicio";
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Estilos para los campos de fecha y hora de finalización */
+form #end-date::after,
+form #end-time::after {
+    content: " De finalización";
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Botones */
+form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #be8cff;
+    background-color: #ae4cff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Acciones */
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilos para botones */
+button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 1px solid #be8cff;
+    background-color: #ae4cff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efecto hover sobre botones */
+button:hover {
+    background-color: #421557;
+}
+
+/* Estilo para botón activo */
+button.active {
+    background-color: #6220b8;
+    border-color: #6220b8;
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+    max-height: 300px;
+}
+
+/* Estilos para elementos de la lista */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para último elemento de la lista */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Efecto hover sobre elementos de la lista */
+li:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+/* Estilo para tarea completada */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Nueva tarea */
+.new-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
