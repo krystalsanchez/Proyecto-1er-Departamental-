@@ -44,5 +44,5 @@ Este proyecto es una aplicación web simple de lista de tareas construida utiliz
 Este proyecto fue creado por: Sanchez Calderon Krystal, Garcia Rivera Martha Areli Y Flores Islas Daniel Alejandro. Siéntete libre de contribuir o proporcionar comentarios.
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia CC0 1.0. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la Licencia CC0 1.0. Consulta el archivo [LICENSE](LICENCIA) para más detalles.
 
